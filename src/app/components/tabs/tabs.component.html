@@ -1,0 +1,58 @@
+<div class="tabs flex-column position-relative p-3">
+    <div class="tabs-btns w-100 row">
+        <button *ngFor="let tab of tabs" class="btn tab-btn" [class.selected]="selectedTab === tab"
+            (click)="openPage(tab)">
+            {{ tab }}
+        </button>
+    </div>
+    <div *ngFor="let product of products" id="Reviews" class="tab-content">
+        <div *ngFor="let review of product.reviews" class="cus-review">
+            <div class="review-details">
+                <div class="row">
+                    <div class="col fir">
+                        <img src="{{ review.userImage }}" alt="{{ review.userName }}" class="cus-review-img" />
+                    </div>
+                    <div class="col sec">
+                        <h5 class="cus-review-name">{{ review.userName }}</h5>
+                        <p class="cus-review-date">{{ review.date }}</p>
+                    </div>
+                </div>
+                <div class="rate-review">
+                    <app-rate [rating]="review.rating"></app-rate>
+                    <!-- Use the RatingComponent to display the rating of the review -->
+                </div>
+            </div>
+            <div class="cus-review-comment">
+                {{ review.comment }}
+            </div>
+        </div>
+        <nav aria-label="Page navigation example" class="p-4">
+            <ul class="pagination d-flex justify-content-center align-items-center text-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item">
+                    <a class="page-link active" href="#">3</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <app-add-review></app-add-review>
+    </div>
+    <div id="About" class="tab-content"></div>
+    <div id="Details" class="tab-content"></div>
+    <div id="Materials" class="tab-content"></div>
+    <div id="Shipping" class="tab-content"></div>
+</div>

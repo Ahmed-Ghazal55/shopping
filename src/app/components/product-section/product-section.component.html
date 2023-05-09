@@ -1,0 +1,98 @@
+<div *ngFor="let product of products"
+    class="container main-con position-relative justify-content-center align-items-start">
+    <section class="col-lg-7 col-md-11 col-sm-11">
+        <div class="container product-section w-100 justify-content-between">
+            <div class="product-gallery col-5">
+                <div class="container-gallery">
+                    <img src="{{ product.coverImage }}" id="expandedImg" style="width: 100%" />
+                </div>
+                <div class="row">
+                    <div *ngFor="let image of product.images" class="col">
+                        <img src="{{ image }}" style="width: 100%" (click)="tabGallery($event)" />
+                    </div>
+                </div>
+            </div>
+            <div class="product-information col col-6">
+                <h2>
+                    {{ product.title }}
+                </h2>
+                <div class="rate">
+                    <div class="rate-stars">
+                        <app-rate [rating]="product.rate"></app-rate>
+                    </div>
+                    <div class="rate-caption">
+                        <p class="caption">
+                            <span>5</span>
+                            on
+                            <span>22</span>
+                            reviwes
+                        </p>
+                    </div>
+                </div>
+                <div class="about-product">
+                    <p class="main-inf">
+                        {{ product.description }}
+                    </p>
+                    <br />
+                    <h5>What's Included:</h5>
+                    <br />
+                    <p class="includ-product">
+                        <span> 1 x Duvet Cover </span>
+                        <br />
+                        <span> 1 x Sham Set </span>
+                    </p>
+                </div>
+                <div class="product-color">
+                    <h5>color</h5>
+                    <div class="colors-list">
+                        <button *ngFor="let color of product.colors" class="color-btn active" role="button">
+                            <svg viewBox="0 0 250 250" height="22px" width="22px">
+                                <circle cy="125" cx="125" r="110" [attr.fill]="color"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <app-tabs></app-tabs>
+
+    </section>
+
+    <section class="col-lg-4 col-md-11 col-sm-11">
+        <div class="container product-details flex-column">
+            <div class="price">
+                <div class="currncy">
+                    <p class="currncy-num">${{ product.price }}</p>
+                    <p class="about-stock"><span>in stock</span></p>
+                </div>
+                <div class="about-currncy">
+                    As low as $33 every 2 weeks with Affirm.
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="size">
+                <h3>Size: Twin XL</h3>
+                <div class="sizes-btns">
+                    <button *ngFor="let size of product.sizes" class="size-btn">
+                        {{ size }}
+                    </button>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <div class="num-of-product">
+                    <button class="minus">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <input type="number" name="numOfProduct" id="numOfProduct" value="1" min="0" />
+                    <button class="plus">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+                <div class="addToCart-btn">
+                    <span>add to cart</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,36 @@
+<div *ngFor="let product of products" class="add-review">
+    <h1 class="title-rev">
+        Write A Review
+    </h1>
+    <form (ngSubmit)="addReviewToProduct(product, review)">
+        <div class="reviews-details">
+            <div class="details">
+                <div class="review-rata">
+                    <label for="rate-select">Review Stars</label>
+                    <select id="rate-select" name="rating" [(ngModel)]="review.rating">
+                        <option value="5" selected>5 Stars Rating</option>
+                        <option value="4">4 Stars Rating</option>
+                        <option value="3">3 Stars Rating</option>
+                        <option value="2">2 Stars Rating</option>
+                        <option value="1">1 Star Rating</option>
+                    </select>
+                </div>
+                <div class="review-name">
+                    <label for="name">your name</label>
+                    <input type="text" name="name" id="name" placeholder="your name" [(ngModel)]="review.userName">
+                </div>
+                <div class="review-email">
+                    <label for="e-mail">email address</label>
+                    <input type="email" name="email" id="email" placeholder="email address" [(ngModel)]="review.email">
+                </div>
+            </div>
+            <div class="review-comment">
+                <label for="rev-comment">your review</label>
+                <textarea type="text" name="rev-comment" id="rev-comment" [(ngModel)]="review.comment"></textarea>
+            </div>
+            <button type="submit" class="post-btn">
+                Post Your Review
+            </button>
+        </div>
+    </form>
+</div>

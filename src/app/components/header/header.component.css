@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header .container {
+    min-width: 100%;
+}
+
+.main-head {
+    position: relative;
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.55px solid #ebebeb;
+}
+
+.main-head .main-text {
+    letter-spacing: 0em;
+    text-align: left;
+
+    position: relative;
+    margin-left: 59px;
+    width: 329px;
+    height: 15px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #686868;
+    order: 0;
+}
+
+.main-head .main-items {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    order: 1;
+}
+
+.main-head .main-items .main-list-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 0%;
+    gap: 10px;
+
+    position: relative;
+    width: auto;
+    height: auto;
+
+    list-style: none;
+}
+
+.main-head .main-items .main-list-items .main-item:hover,
+.main-head .main-items .main-list-items .main-item:active,
+.main-head .main-items .main-list-items .main-item:focus {
+    color: #1e1e1e;
+}
+
+.main-head .main-items .main-list-items .main-item {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #787878;
+
+    /* Inside auto layout */
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.aboutus {
+    order: 0;
+}
+
+.sustainability {
+    order: 1;
+}
+
+.trade {
+    order: 2;
+}
+
+.design {
+    order: 3;
+}
+
+.stores {
+    order: 4;
+}
+
+.blog {
+    order: 5;
+}
+
+.lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    height: auto;
+
+    order: 6;
+}
+
+.lang select {
+    width: 40px;
+    height: 20px;
+    border: none;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #9babb5;
+    cursor: pointer;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+header .sec-head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #ebebeb;
+    gap: 2%;
+}
+
+header .sec-head .logo {
+    position: relative;
+    width: 186px;
+    height: auto;
+
+    mix-blend-mode: darken;
+}
+
+header .sec-head .logo a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .sec-head .logo a img {
+    position: relative;
+    width: 68px;
+    height: 29px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+header .search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 19px;
+    gap: 50px;
+
+    position: relative;
+    width: auto;
+    height: 47px;
+
+    background: #ededed;
+    border-radius: 4px;
+}
+
+header .search-box input {
+    background: #ededed;
+    border: none;
+    width: 90%;
+    height: 90%;
+}
+
+header .search-box input::placeholder {
+    width: 104px;
+    height: 15px;
+    padding-left: 2%;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #9babb5;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+header .search-box img {
+    left: -0.13%;
+    right: 0.05%;
+    top: -0.13%;
+    bottom: 0.05%;
+    cursor: pointer;
+}
+
+header .sec-head .links-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    margin-right: 2%;
+}
+
+header .sec-head .links-item .fav-icon a img {
+    width: 20px;
+    height: 20px;
+}
+
+header .sec-head .links-item .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 9px;
+    gap: 5px;
+
+    width: auto;
+    height: 50px;
+
+    border-radius: 4px;
+}
+
+header .sec-head .links-item .user a {
+    width: 106px;
+    height: 18px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #413b3b;
+    text-decoration: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+header .sec-head .links-item .user a img {
+    width: 20px;
+    height: 20px;
+}
+
+header .sec-head .links-item .shopping-cart-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 9px;
+    gap: 5px;
+    flex-wrap: nowrap;
+
+    width: auto;
+    height: 50px;
+
+    border-radius: 4px;
+}
+
+header .sec-head .links-item .shopping-cart-icon a {
+    width: 122px;
+    height: 18px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #413b3b;
+    text-decoration: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+header .sec-head .links-item .shopping-cart-icon a img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-btn {
+    width: auto;
+    font-size: small;
+    border-bottom: none;
+    border-radius: 0;
+    padding: 1em;
+    color: #494949;
+    font-weight: 450;
+    border-bottom: 3px solid white;
+}
+
+.nav-btn:hover {
+    border-bottom: 3px solid #000;
+    color: #000;
+    transition: 5ms ease;
+}
+
+.nav-btn:focus {
+    border: none;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    color: #1e1e1e;
+}
+
+.nav-link {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #787878;
+
+    /* Inside auto layout */
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .main-head {
+        justify-content: center;
+        min-height: 46px;
+    }
+
+    .main-head .main-text {
+        height: auto;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+
+    .main-head .main-items {
+        display: none;
+    }
+
+    .sec-head .search-box {
+        display: none;
+    }
+
+    .sec-head .links-item div a span {
+        display: none;
+    }
+
+    header .sec-head .links-item .user a,
+    header .sec-head .links-item .shopping-cart-icon a {
+        width: 22px;
+    }
+}

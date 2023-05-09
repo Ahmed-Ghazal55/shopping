@@ -1,0 +1,309 @@
+.add-review {
+    max-width: 600px;
+    padding: 4%;
+}
+
+.title-rev {
+    width: 180px;
+    height: 48px;
+    padding: 4%;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #374957;
+}
+
+.reviews-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 65px;
+    gap: 10px;
+}
+
+.review-rata {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 63px;
+    width: 173px;
+    gap: 9px;
+}
+
+.review-rata label {
+    width: 65px;
+    height: 14px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 169.02%;
+    /* or 17px */
+
+    font-variant: small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #374957;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.review-rata #rate-select {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 14px;
+
+    width: 173px;
+    height: 38px;
+
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.review-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 63px;
+    width: 173px;
+    gap: 9px;
+}
+
+.review-name label {
+    width: 65px;
+    height: 14px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 169.02%;
+    /* or 17px */
+
+    font-variant: small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: #374957;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.review-name #name {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 46px 9px 14px;
+    gap: 10px;
+
+    width: 173px;
+    height: 38px;
+
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+}
+
+.review-name #name::placeholder {
+    width: 80px;
+    height: 20px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 169.02%;
+    /* or 19px */
+
+    font-variant: all-small-caps;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: rgba(55, 73, 87, 0.7);
+}
+
+.review-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 63px;
+    width: 173px;
+    gap: 9px;
+}
+
+.reviews-details .details .review-email label {
+    width: 65px;
+    height: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 169.02%;
+    /* or 17px */
+
+    font-variant: small-caps;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #374957;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.reviews-details .details .review-email #email {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 14px;
+    gap: 10px;
+
+    width: 173px;
+    height: 38px;
+
+    background: #EBEBEB;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.reviews-details .details .review-email #email::placeholder {
+    width: 80px;
+    height: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 169.02%;
+    /* or 19px */
+
+    font-variant: all-small-caps;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: rgba(55, 73, 87, 0.7);
+}
+
+.reviews-details .review-comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 5% 0;
+}
+
+.reviews-details .review-comment label {
+    width: 65px;
+    height: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 169.02%;
+    /* or 17px */
+
+    font-variant: small-caps;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #374957;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.reviews-details .review-comment #rev-comment {
+    padding: 4%;
+
+    width: 100%;
+    height: 144px;
+
+    background: #EBEBEB;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+
+}
+
+.reviews-details .post-btn {
+    display: flex;
+    align-items: flex-start;
+    padding: 9px 20px;
+    gap: 10px;
+
+    width: 132px;
+    height: 38px;
+
+    background: #BEAF7C;
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 169.02%;
+    /* or 19px */
+
+    font-variant: all-small-caps;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+}

@@ -1,0 +1,483 @@
+.container {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 2%;
+}
+
+.main-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    min-width: 100% !important;
+    padding: 1% 0%;
+}
+
+section {
+    min-height: 50vh;
+    padding: 1%;
+    gap: 10px;
+
+    background-color: #fafafa;
+}
+
+.product-section,
+.product-details {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.09);
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-gallery img {
+    width: 308px;
+    height: 283px;
+}
+
+.product-gallery .row {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row .col {
+    float: left;
+    width: 73px;
+    height: 54.23px;
+    padding: 5px;
+}
+
+/* Style the images inside the grid */
+.product-gallery .row .col img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.product-gallery .row .col img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.product-information h2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    /* or 82% */
+
+    letter-spacing: 0.72px;
+
+    color: #374957;
+    padding-top: 3%;
+}
+
+.product-information .rate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.product-information .rate .rate-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 6px;
+}
+
+.fa-star.checked {
+    color: #feab2f;
+}
+
+.product-information .rate .rate-caption .caption {
+    /* 5 on 22 reviews */
+    position: relative;
+    width: 105px;
+    height: 13px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 13px;
+    /* identical to box height, or 87% */
+
+    color: #6c757d;
+}
+
+.product-information .about-product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 5%;
+}
+
+.product-information .about-product .main-inf {
+    position: relative;
+    width: auto;
+    min-height: 138px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    color: rgba(55, 73, 87, 0.8);
+}
+
+.product-information .about-product h5 {
+    width: auto;
+    height: 21px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+
+    color: #374957;
+}
+
+.product-information .about-product .includ-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 6px;
+
+    width: 124px;
+    height: 89px;
+}
+
+.product-information .about-product .includ-product span {
+    width: auto;
+    height: 21px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+
+    color: #6c757d;
+
+    /* Inside auto layout */
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.product-information .product-color {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 100%;
+    position: relative;
+    padding-left: 0%;
+}
+
+.product-information .product-color h5 {
+    padding: 9%;
+    padding-left: 0%;
+    text-align: start;
+
+    position: relative;
+    width: auto;
+    height: auto;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 118% */
+
+    text-transform: uppercase;
+
+    color: #374957;
+}
+
+.product-information .product-color .colors-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: auto;
+}
+
+.product-information .product-color .colors-list .color-btn {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: auto;
+}
+
+.product-information .product-color .colors-list .color-btn.active svg circle {
+    stroke: #000000;
+    stroke-width: 0.44px;
+    padding: auto;
+}
+
+
+
+.price {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    align-items: start;
+}
+
+.price .currncy {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    height: 90px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.price .currncy .currncy-num {
+    width: 136px;
+    height: 30px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 1.2px;
+
+    color: #374957;
+}
+
+.price .currncy .about-stock {
+    width: 71px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #beaf7c;
+    border-radius: 11.5px;
+}
+
+.price .currncy .about-stock span {
+    width: 47px;
+    height: 15px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height, or 115% */
+
+    color: #ffffff;
+}
+
+.price .about-currncy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 50px;
+    padding: 5%;
+    border-bottom: 1px solid #ebebeb;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 125% */
+
+    color: rgba(55, 73, 87, 0.8);
+}
+
+.price .about-currncy a {
+    padding: 0 2%;
+    color: #beaf7c;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.size h3 {
+    width: 150px;
+    height: 15px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+
+    color: #374957;
+}
+
+.size .sizes-btns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5%;
+    gap: 9px;
+}
+
+.size .sizes-btns .size-btn {
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    gap: 10px;
+
+    width: 80px;
+    height: 30px;
+
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: none;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 150% */
+
+    color: #262626;
+
+    /* Inside auto layout */
+
+    flex-grow: 1;
+}
+
+.size .sizes-btns .size-btn.unavailable {
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    min-height: 50px;
+    padding: 5%;
+}
+
+.add-to-cart .num-of-product {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.add-to-cart .num-of-product button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.add-to-cart .num-of-product button i {
+    color: #333;
+}
+
+.add-to-cart .num-of-product #numOfProduct {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 10px;
+
+    width: 100px;
+    height: 46px;
+
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+}
+
+/* .sec-main-col .fir-section .add-to-cart .num-of-product #numOfProduct */
+
+.add-to-cart .addToCart-btn {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    padding: 12px 36px;
+
+    width: 153px;
+    height: 46px;
+
+    background: #beaf7c;
+    border-radius: 5px;
+}
+
+.add-to-cart .addToCart-btn span {
+    width: 81px;
+    height: 22px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 147% */
+
+    text-align: center;
+
+    color: #ffffff;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.add-to-cart .addToCart-btn:hover {
+    background-color: #555;
+}
