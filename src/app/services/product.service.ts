@@ -21,10 +21,6 @@ export class ProductService {
 
   constructor(private http: HttpClient) {}
 
-  // getProducts(): Observable<Product[]> {
-  //   return this.http.get<Product[]>(this.apiUrl);
-  // }
-
   getProductCards(): Observable<Card[]> {
     return this.http.get<Card[]>(this.apiUrlCard);
   }
@@ -35,7 +31,8 @@ export class ProductService {
 
   updateProduct(product: Product, review: Review): Observable<any> {
     const url = `${this.apiUrl}/${product.id}`;
-    return this.http.put<Review>(url, product, httpOptions);
+    product.reviews.push(review);
+    return this.http.put<Product>(url, product, httpOptions);
   }
   
 }

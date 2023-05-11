@@ -53,13 +53,11 @@ export class SliderSectionComponent implements OnInit, AfterViewInit {
     ]
   };
 
-
   constructor(private cardService: ProductService) { };
 
   ngOnInit(): void {
     this.cardService.getProductCards().subscribe((cards) => (this.cards = cards));
   }
-
   ngAfterViewInit() {
     console.log('ngAfterViewInit called');
     $(this.slickCarousel.nativeElement).slick();

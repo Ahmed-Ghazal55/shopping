@@ -18,7 +18,7 @@ export class AddReviewComponent implements OnInit {
   };
   reviews: Review[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productService
@@ -38,7 +38,7 @@ export class AddReviewComponent implements OnInit {
       email: review.email,
     };
     product.reviews.push(newReview);
-    this.productService.updateProduct(product, newReview).subscribe((res) => {
+    this.productService.updateProduct(product, newReview).subscribe(() => {
       console.log('Product updated successfully!');
       // Clear the input fields and refresh the reviews
       this.review = {
@@ -47,6 +47,7 @@ export class AddReviewComponent implements OnInit {
         rating: 5,
         comment: '',
       };
+      this.productService.getProducts().subscribe((products) => (this.products = products));
     });
   }
 
