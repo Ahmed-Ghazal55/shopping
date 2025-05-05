@@ -2,22 +2,35 @@
   <div class="title">
     <h2>new arrivals</h2>
     <div class="control-btns">
-      <button class="slick-left">
+      <button class="slick-left" (click)="prevSlide()" aria-label="Previous Slide">
         <i class="fa fa-arrow-left"></i>
       </button>
-      <button class="slick-right">
+      <button class="slick-right" (click)="nextSlide()" aria-label="Next Slide">
         <i class="fa fa-arrow-right"></i>
       </button>
     </div>
   </div>
+
+  <!-- Loading Indicator -->
+  <div *ngIf="isLoading" class="loading-indicator">
+    <p>Loading products...</p> <!-- Or use a spinner component -->
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="fetchError && !isLoading" class="error-message">
+    <p>Could not load products. Please try again later.</p>
+  </div>
+
+  <!-- Carousel Section (only if not loading, no error, and cards exist) -->
   <ngx-slick-carousel
+  *ngIf="!isLoading && !fetchError && cards.length > 0"
     class="new-arrivals-cards carousel"
     #slickModal="slick-carousel"
     [config]="slideConfig"
   >
     <div ngxSlickItem *ngFor="let card of cards" class="card">
       <div class="card-img-top">
-        <img src="{{ card.coverImg }}" alt="" />
+        <img [src]="card.coverImg" [alt]="card.title || 'Product image'" />
       </div>
       <div class="card-body">
         <h3 class="card-title">{{ card.title }}</h3>
@@ -25,22 +38,22 @@
           <app-rate [rating]="card.rate"></app-rate>
           <div class="rate-caption">
             <p class="caption">
-              <span>5</span>
+              <span>{{ card.rate || 5 }}</span>
               on
-              <span>22</span>
-              reviwes
+              <span>{{ card.reviews || 22 }}</span>
+              reviews
             </p>
           </div>
         </div>
         <div class="details">
           <div class="price">
-            <p>
-              {{ card.price | currency : "USD" : "symbol" }}
-            </p>
-            <span> $200.00 </span>
+            <p>{{ card.price | currency : "USD" : "symbol" }}</p>
+            <!-- Show original price conditionally and dynamically -->
+            <span *ngIf="card.price">{{ card.price | currency : "USD" : "symbol" }}</span>
           </div>
           <div class="cart-icon">
-            <img src="../../../assets/icons-/Frame.svg" alt="" srcset="" />
+            <!-- Add descriptive alt text, remove empty srcset -->
+            <img src="../../../assets/icons-/Frame.svg" alt="Add to cart" />
           </div>
         </div>
       </div>

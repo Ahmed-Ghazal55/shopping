@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "coverImg": "../../../assets/imgs/cards/linen-venice-set_melon_lightbox_7914 1.svg",
+    "title": "Product 1",
+    "price": 19.99,
+    "rate": 2
+  },
+  {
+    "id": 2,
+    "coverImg": "../../../assets/imgs/cards/275511044_3426685490788962_1008602672280075216_n 1.svg",
+    "title": "Product 2",
+    "price": 29.99,
+    "rate": 3
+  },
+  {
+    "id": 3,
+    "coverImg": "../../../assets/imgs/cards/brushed-cotton-venice-set_bone_lightbox_15632 2.svg",
+    "title": "Product 3",
+    "price": 14.99,
+    "rate": 5
+  },
+  {
+    "id": 4,
+    "coverImg": "../../../assets/imgs/cards/linen-euro-sham_wave_lightbox_ 1.svg",
+    "title": "Product 4",
+    "price": 149,
+    "rate": 2
+  },
+  {
+    "id": 5,
+    "coverImg": "../../../assets/imgs/cards/linen-venice-set_melon_lightbox_7914 1.svg",
+    "title": "Product 5",
+    "price": 14.99,
+    "rate": 4
+  }
+]

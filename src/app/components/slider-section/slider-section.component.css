@@ -1,240 +1,235 @@
 .new-arrivals {
-    position: relative;
-    width: 100%;
-    padding: 5%;
+  position: relative;
+  width: 100%;
+  padding: 5%;
 }
 
 .new-arrivals .title {
-    width: 100%;
-    padding: 1%;
-    margin: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 68px;
-    border-bottom: 1px solid #9C9C9C80;
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 68px;
+  border-bottom: 1px solid #9c9c9c80;
 }
 
 .new-arrivals .title h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 22px;
-    /* or 75% */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 22px;
+  /* or 75% */
 
+  color: #374957;
 
-    color: #374957;
-
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    text-transform: capitalize;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-transform: capitalize;
 }
 
 .new-arrivals .title .control-btns .slick-left {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    width: 40px;
-    height: 38px;
+  width: 40px;
+  height: 38px;
 
-    color: #BEAF7C;
+  color: #beaf7c;
 
-    border: 1.55px solid #BEAF7C;
-    border-radius: 3px;
+  border: 1.55px solid #beaf7c;
+  border-radius: 3px;
 }
 
 .new-arrivals .title .control-btns .slick-right {
-    width: 40px;
-    height: 38px;
+  width: 40px;
+  height: 38px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 
-    border: 1.55px solid #EBEBEB;
-    background: #BEAF7C;
-    border-radius: 3px;
+  border: 1.55px solid #ebebeb;
+  background: #beaf7c;
+  border-radius: 3px;
 }
 
 .new-arrivals .title .control-btns .slick-left:hover,
 .new-arrivals .title .control-btns .slick-right:hover {
-    cursor: pointer;
-    opacity: 80%;
-    transform: scale(1.1);
+  cursor: pointer;
+  opacity: 80%;
+  transform: scale(1.1);
 }
 
 .new-arrivals .new-arrivals-cards {
-    position: relative;
-    width: 100%;
-    margin: 1%;
-    display: flex;
-    padding: 1%;
-    padding-top: 4%;
-    gap: 17px;
+  position: relative;
+  width: 100%;
+  margin: 1%;
+  display: flex;
+  padding: 1%;
+  padding-top: 4%;
+  gap: 17px;
 }
 
 .new-arrivals .new-arrivals-cards .card {
-    position: relative;
-    width: 263px;
-    height: 376px;
+  position: relative;
+  width: 263px;
+  height: 376px;
 
-    margin: 0% 17px;
+  margin: 0% 17px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.09);
-    border-radius: 0px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.09);
+  border-radius: 0px;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-img-top {
-    position: relative;
-    width: 100%;
-    height: 210px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-img-top img {
-    width: 100%;
-    padding: 3%;
-    padding-top: 30px;
-    object-fit: contain;
+  width: 100%;
+  padding: 3%;
+  padding-top: 30px;
+  object-fit: contain;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body {
-    position: relative;
-    width: 100%;
-    min-height: 165px;
-    padding: 4%;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 165px;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .card-title {
-    position: relative;
-    width: 100%;
-    height: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
 
-    padding-top: 5%;
+  padding-top: 5%;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height, or 120% */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 120% */
 
-    letter-spacing: 0.72px;
+  letter-spacing: 0.72px;
 
-    color: #374957;
-    order: 0;
-
+  color: #374957;
+  order: 0;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .rate {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    padding-left: 0.2%;
-    gap: 3px;
-    height: auto;
-    
-    order: 1;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 0.2%;
+  gap: 3px;
+  height: auto;
+
+  order: 1;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .rate .rate-caption {
-    width: auto;
-    height: 13px;
+  width: auto;
+  height: 13px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
-    /* identical to box height, or 108% */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  /* identical to box height, or 108% */
 
-
-    color: #6C757D;
+  color: #6c757d;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .details {
-    position: absolute;
-    width: 100%;
-    padding: 3%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    bottom: 22px;
-    right: 0%;
-    left: 0%;
+  bottom: 22px;
+  right: 0%;
+  left: 0%;
 
-    order: 2;
+  order: 2;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .details .price {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .details .price p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    /* identical to box height, or 120% */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height, or 120% */
 
-    letter-spacing: 0.72px;
+  letter-spacing: 0.72px;
 
-    color: #374957;
+  color: #374957;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .details .price span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
-    /* identical to box height, or 127% */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  /* identical to box height, or 127% */
 
-    letter-spacing: 0.72px;
-    text-decoration-line: line-through;
+  letter-spacing: 0.72px;
+  text-decoration-line: line-through;
 
-    color: #999999;
+  color: #999999;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .details .cart-icon {
-    padding: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .new-arrivals .new-arrivals-cards .card .card-body .details .cart-icon.active {
-    background-color: #BEAF7C;
+  background-color: #beaf7c;
 }
 
-
-
 @media (max-width: 1024px) {
-    .new-arrivals .new-arrivals-cards .card {
-        width: calc(50% - 20px);
-    }
+  .new-arrivals .new-arrivals-cards .card {
+    width: calc(50% - 20px);
+  }
 }
 
 @media (max-width: 600px) {
-    .new-arrivals .new-arrivals-cards .card {
-        width: 100%;
-    }
+  .new-arrivals .new-arrivals-cards .card {
+    width: 100%;
+  }
 }

@@ -28,4 +28,8 @@ export interface Card {
   title: string;
   price: number;
   rate: number;
+  description: string;
+  colors: string[];
+  sizes: string[];
+  reviews: Review[];
 }

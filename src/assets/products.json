@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Brushed Cotton Venice Set",
+    "description": "Protect your duvet insert while keeping cozy; this cover feels as good as it looks. Crafted in Portugal from 100% premium, certified long-staple Egyptian cotton – our percale sheets are lightweight and durable with a crisp finish that only gets better with time.",
+    "coverImage": "../../../../assets/imgs/gallery/brushed-cotton-venice-set_bone_lightbox_15632 1.svg",
+    "images": [
+      "../../../../assets/imgs/gallery/275511044_3426685490788962_1008602672280075216_n 1.svg",
+      "../../../../assets/imgs/gallery/brushed-cotton-duvet-cover_bone_lightbox_15608 2.svg",
+      "../../../../assets/imgs/gallery/brushed-cotton-venice-set_bone_lightbox_15632 3.svg",
+      "../../../../assets/imgs/gallery/linen-venice-set_melon_lightbox_7914 2.svg"
+    ],
+    "colors": [
+      "#FFFFFF",
+      "#F7F6EB",
+      "#D6D3C9",
+      "#B4B4B4",
+      "#C08E85",
+      "#879AAC",
+      "#B4B4B4",
+      "#1E1E1E",
+      "#FEAB2F"
+    ],
+    "sizes": [
+      "Twin",
+      "Twin XL",
+      "FULL",
+      "QUEEN",
+      "KING",
+      "CAL KING"
+    ],
+    "price": 19.99,
+    "rate": 3,
+    "reviews": [
+      {
+        "userId": 1,
+        "userName": "Ahmed Mohamed",
+        "userImage": "../../../../assets/imgs/Rectangle 219.svg",
+        "date": "24 January 2023",
+        "comment": "Changing our bedroom from blues to earth tones. The raisin duvet cover goes perfectly with other earth tones. Love the feel of percale and how it keeps me cool as a hot sleeper.",
+        "rate": 4
+      },
+      {
+        "userId": 2,
+        "userName": "Khalid Mohammed",
+        "userImage": "../../../../assets/imgs/image 10.svg",
+        "date": "15 January 2023",
+        "comment": "These sheets made such a difference for me. Even if you sleep hot, you wont sweat with the moisture wicking. Just buy them!",
+        "rate": 2
+      }
+    ]
+  }
+]
