@@ -16,7 +16,7 @@ section {
 
 .about-ourProducts h2 {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     min-height: 75px;

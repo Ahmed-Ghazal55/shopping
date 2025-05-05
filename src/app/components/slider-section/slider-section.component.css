@@ -178,7 +178,7 @@
 .new-arrivals .new-arrivals-cards .card .card-body .details .price {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 5px;
 }
