@@ -43,4 +43,13 @@ describe('AddReviewComponent', () => {
     expect(product.reviews[0].rating).toBe(4);
     expect(component.review.comment).toBe('');
   });
+
+  it('should reject invalid review data before calling the service', () => {
+    const product = { reviews: [] } as unknown as Product;
+    component.addReviewToProduct(product, {
+      userName: ' ', email: 'invalid', rating: 6, comment: ' '
+    });
+    expect(service.updateProduct).not.toHaveBeenCalled();
+    expect(product.reviews.length).toBe(0);
+  });
 });
