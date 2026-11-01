@@ -20,6 +20,13 @@ Open http://localhost:4200/. To run unit tests: `npm test`; to build: `npm run b
 
 `npm run server` starts a separate json-server on port 9000 using `db.json`, but the existing `ProductService` reads static assets, **not** that server.
 
+## Security hold — unverified archives
+Two ZIP files currently appear inside the tracked `node_modules/` tree:
+- `node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip`
+- `node_modules/resolve-url-loader/node_modules/shopping-hungerer.zip`
+
+Their provenance and contents have **not** been verified. Do not download, open, execute, publish as releases, or redistribute these archives. Review repository access history and dependencies before a clean rebuild. Treat the repository as **not release-ready** until the security audit and independent tests pass.
+
 ## Known limitations and maintenance priorities
 1. Verify Angular 16-compatible Node and npm versions; run clean install, build and tests.
 2. Keep `node_modules/` out of Git tracking (after confirming all files and backups). A .gitignore rule does not untrack already committed files.
