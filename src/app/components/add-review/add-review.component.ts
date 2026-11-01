@@ -37,7 +37,6 @@ export class AddReviewComponent implements OnInit {
       comment: review.comment,
       email: review.email,
     };
-    product.reviews.push(newReview);
     this.productService.updateProduct(product, newReview).subscribe(() => {
       console.log('Product updated successfully!');
       // Clear the input fields and refresh the reviews
@@ -47,7 +46,7 @@ export class AddReviewComponent implements OnInit {
         rating: 5,
         comment: '',
       };
-      this.productService.getProducts().subscribe((products) => (this.products = products));
+      // Changes remain in memory only; product data comes from static JSON.
     });
   }
 
