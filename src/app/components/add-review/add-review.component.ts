@@ -27,15 +27,23 @@ export class AddReviewComponent implements OnInit {
   }
 
   addReviewToProduct(product: Product, review: Review) {
+    const name = review.userName.trim();
+    const email = review.email.trim();
+    const comment = review.comment.trim();
+    const rating = Number(review.rating);
+    if (!name || !comment || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+        !Number.isInteger(rating) || rating < 1 || rating > 5) {
+      return;
+    }
     const newReview: Review = {
       id: 0,
       userId: 0,
-      userName: review.userName,
+      userName: name,
       userImage: '',
       date: new Date().toISOString(),
-      rating: review.rating,
-      comment: review.comment,
-      email: review.email,
+      rating,
+      comment,
+      email,
     };
     this.productService.updateProduct(product, newReview).subscribe(() => {
       console.log('Product updated successfully!');
